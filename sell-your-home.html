@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Home - Silver Cliff Properties</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sell Your Home Today</h1>
+            <p>Get a Cash Offer for Your Home - We Buy Homes in Any Condition!</p>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <section id="sell-home-form">
+        <div class="container">
+            <h2>We purchase homes in any condition</h2>
+            <form action="https://formspree.io/your-email@example.com" method="POST">
+                <!-- Question 1: When do you want to sell the house -->
+                <label for="sell-timing">When would you like to sell the house?</label>
+                <select id="sell-timing" name="sell-timing">
+                    <option value="ASAP">ASAP</option>
+                    <option value="Within 30 Days">Within 30 Days</option>
+                    <option value="Not Urgent">Not Urgent</option>
+                </select>
+
+                <!-- Question 2: Reason for selling -->
+                <label for="reason">What is the reason for selling the home? What is a fair price for the home?</label>
+                <textarea id="reason" name="reason" required></textarea>
+
+                <!-- Question 3: Contact Information -->
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Question 4: Property Address -->
+                <label for="address">Property Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <!-- Terms of Use and Privacy Policy -->
+                <p>
+                    Message and data rates may apply. I acknowledge that I agree to and have read the <a href="#">Terms of Use</a>/<a href="#">Privacy Policy</a>. I agree to receive calls/texts/emails and automated calls/texts/emails. To opt out, I understand I can reply "STOP".
+                </p>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Thank You Page (to display after form submission) -->
+    <section id="thank-you" style="display: none;">
+        <div class="container">
+            <h2>Thank You!</h2>
+            <p>We will reach out to you soon with more information regarding your home sale. We look forward to working with you!</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Silver Cliff Properties. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
