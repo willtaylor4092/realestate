@@ -5,45 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Silver Cliff Properties</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic styling for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Welcome Section */
+        header {
+            position: relative;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 50px;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 24px;
+        }
+
+        /* Full-width image */
+        .hero-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Sell your home section styling */
+        #sell-home-form {
+            background-color: #f4f4f4;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #sell-home-form h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Form */
+        form input, form textarea, form button {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Our Services</a></li>
-            <li><a href="#contact">Contact Us</a></li>
             <li><a href="sell-your-home.html">Sell Your Home</a></li> <!-- Link to Sell Your Home page -->
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
     </nav>
 
     <!-- Welcome Section -->
     <header id="home">
+        <img src="your-house-image.jpg" alt="House" class="hero-image"> <!-- Replace with your image -->
         <div class="container">
             <h1>Welcome to Silver Cliff Properties</h1>
             <p>Empowering Investors with Bold Opportunities for Growth and Financial Security in Real Estate</p>
         </div>
     </header>
 
-    <!-- About Us Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>At Silver Cliff Properties, we specialize in real estate wholesaling. We help private investors discover profitable property opportunities, and offer bold, innovative solutions for growing their portfolios.</p>
-        </div>
-    </section>
+    <!-- Sell Your Home Section -->
+    <section id="sell-home-form">
+        <h2>Get a Cash Offer for Your Home Today</h2>
+        <p>We purchase homes in any condition.</p>
+        <form action="https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse" method="POST">
+            <label for="sell-time">When would you like to sell your home?</label>
+            <input type="text" id="sell-time" name="entry.123456789" placeholder="ASAP, within 30 days, etc." required>
 
-    <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Property Acquisitions</li>
-                <li>Wholesale Real Estate Deals</li>
-                <li>Investment Opportunities</li>
-            </ul>
-        </div>
+            <label for="reason">What is the reason for selling your home?</label>
+            <input type="text" id="reason" name="entry.987654321" placeholder="Reason for selling" required>
+
+            <label for="price">What is a fair price for your home?</label>
+            <input type="text" id="price" name="entry.1122334455" placeholder="Estimated price" required>
+
+            <label for="full-name">Full Name</label>
+            <input type="text" id="full-name" name="entry.667788990" required>
+
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="entry.556677889" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="entry.998877665" required>
+
+            <label for="address">Address of the Property</label>
+            <input type="text" id="address" name="entry.443322110" required>
+
+            <p>Message and data rates may apply. I acknowledge that I agree to and have read the Terms of Use/Privacy Policy. I agree to receive calls/texts/emails and automated calls/texts/emails. To opt out I understand I can reply "STOP".</p>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <!-- Contact Section -->
